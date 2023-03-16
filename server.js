@@ -19,7 +19,7 @@ app.post(`${AUTH_PATH}contactus`, (req, res) => {
 
     const mailoptions = {
     from: email,
-    to: 'pratikrajgupta23@gmail.com',
+    to: 'bussiness@swevextech.com',
     subject: 'New contact submission!',
     html:  `
             <p>Name: ${name}</p>
@@ -32,8 +32,8 @@ app.post(`${AUTH_PATH}contactus`, (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'anuragsinhadeveloper@gmail.com',
-      pass: 'jfsticcyypysyzte',
+      user: 'swevexformsubmission@gmail.com',
+      pass: 'nmwxvqotfzvlzbfx',
     },
   });
 
@@ -66,7 +66,7 @@ app.post(`${AUTH_PATH}careersapply`, upload.single('resume'), (req, res) => {
             }
     const mailoptions = {
     from: email,
-    to: 'pratikrajgupta23@gmail.com',
+    to: 'hr@swevextech.com',
     subject: 'New career submission!',
     attachments: [
     {
@@ -87,8 +87,8 @@ app.post(`${AUTH_PATH}careersapply`, upload.single('resume'), (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'anuragsinhadeveloper@gmail.com',
-      pass: 'jfsticcyypysyzte',
+      user: 'swevexformsubmission@gmail.com',
+      pass: 'nmwxvqotfzvlzbfx',
     },
   });
 

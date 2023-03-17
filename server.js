@@ -19,7 +19,7 @@ app.post(`${AUTH_PATH}contactus`, (req, res) => {
 
     const mailoptions = {
     from: email,
-    to: 'bussiness@swevextech.com',
+    to: 'swevexhr@gmail.com',
     subject: 'New contact submission!',
     html:  `
             <p>Name: ${name}</p>
@@ -66,7 +66,7 @@ app.post(`${AUTH_PATH}careersapply`, upload.single('resume'), (req, res) => {
             }
     const mailoptions = {
     from: email,
-    to: 'hr@swevextech.com',
+    to: 'swevexhr@gmail.com',
     subject: 'New career submission!',
     attachments: [
     {
